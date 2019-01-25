@@ -13,11 +13,24 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dp">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/layout_margin"
+                    app:contentInsetStart="0dp"
+                    app:title="@string/app_name"/>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
             <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="56dp"
-                android:background="@color/colorEventListBackground"
                 android:elevation="8dp"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
 

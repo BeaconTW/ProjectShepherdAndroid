@@ -8,17 +8,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:538071414774:android:046482920407128b",
+        "mobilesdk_app_id": "1:538071414774:android:536a77a895ae0ae1",
         "android_client_info": {
-          "package_name": "com.chunchiehliang.bostonplatform"
+          "package_name": "com.shepherd.checkin"
         }
       },
       "oauth_client": [
         {
-          "client_id": "538071414774-apiuv598d24t630bje6c7ra1fafh99q2.apps.googleusercontent.com",
+          "client_id": "538071414774-tpctnu0k20df719ori62bg2qrdl8f9bq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.chunchiehliang.bostonplatform",
+            "package_name": "com.shepherd.checkin",
             "certificate_hash": "4b70f54ea8fdb7bd6a9c4549536a1ab21d183c86"
           }
         },
