@@ -11,7 +11,8 @@
         <activity android:name="com.shepherd.checkin.ui.LoginActivity">
 
         </activity>
-        <activity android:name="com.shepherd.checkin.ui.MainActivity">
+        <activity
+            android:name="com.shepherd.checkin.ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

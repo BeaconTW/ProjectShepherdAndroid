@@ -1,4 +1,4 @@
-package com.shepherd.firestire
+package com.shepherd.firestore
 
 import org.junit.Test
 

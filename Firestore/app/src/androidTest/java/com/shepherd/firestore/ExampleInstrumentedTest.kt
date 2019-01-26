@@ -1,4 +1,4 @@
-package com.shepherd.firestire
+package com.shepherd.firestore
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4

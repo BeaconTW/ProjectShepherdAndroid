@@ -1,4 +1,4 @@
-package com.shepherd.firestire.models
+package com.shepherd.firestore.models
 
 import java.sql.Timestamp
 
