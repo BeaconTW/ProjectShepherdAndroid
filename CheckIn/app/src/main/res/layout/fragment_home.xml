@@ -3,7 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data></data>
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="hasEvent"
+            type="Boolean" />
+    </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -42,14 +47,16 @@
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/list_item_event" />
 
-            <!--<TextView-->
-            <!--android:id="@+id/text_no_event"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="There's no events currently"-->
-            <!--app:isGone="@{hasEvents}"-->
 
         </androidx.core.widget.NestedScrollView>
+
+        <TextView
+            android:id="@+id/text_no_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="There's no events currently"
+            android:visibility="@{hasEvent ? View.GONE : View.VISIBLE}" />
 
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
