@@ -2,14 +2,14 @@ package com.shepherd.checkin.ui
 
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.google.android.material.snackbar.Snackbar
+import com.shepherd.checkin.R
 import com.shepherd.checkin.databinding.FragmentHomeBinding
 import com.shepherd.checkin.model.Event
 import com.shepherd.checkin.ui.adapters.EventAdapter
-import com.google.android.material.snackbar.Snackbar
 
 
 class HomeFragment : Fragment() {
@@ -33,7 +33,15 @@ class HomeFragment : Fragment() {
             }
 
             rvEventList.adapter = viewAdapter
+
+            (activity as AppCompatActivity).setSupportActionBar(toolbarEventList)
+            setHasOptionsMenu(true)
         }
         return binding.root
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu_app_bar_home, menu)
+        super.onCreateOptionsMenu(menu, inflater)
     }
 }
