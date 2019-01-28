@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         val auth = FirebaseAuth.getInstance()
         if (auth.currentUser != null) {
-            tv_user.text = auth.currentUser!!.displayName
+//            tv_user.text = auth.currentUser!!.displayName
         } else {
             themeAndLogo()
         }
@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() {
                 .createSignInIntentBuilder()
                 .setAvailableProviders(providers)
                 .setLogo(R.mipmap.ic_launcher_round)
+                .setTheme(R.style.AppTheme_LoginTheme)
                 .build(),
             RC_SIGN_IN
         )
@@ -54,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         AuthUI.getInstance()
             .signOut(this)
             .addOnCompleteListener {
-                Snackbar.make(root, "Sign out successfully!", Snackbar.LENGTH_SHORT)
+                Snackbar.make(root_view, "Sign out successfully!", Snackbar.LENGTH_SHORT)
                     .show()
             }
     }
@@ -67,6 +68,7 @@ class MainActivity : AppCompatActivity() {
             if (resultCode == Activity.RESULT_OK) {
                 // Successfully signed in
                 val user = FirebaseAuth.getInstance().currentUser
+                user!!.displayName
                 // ...
             } else {
                 // Sign in failed. If response is null the user canceled the

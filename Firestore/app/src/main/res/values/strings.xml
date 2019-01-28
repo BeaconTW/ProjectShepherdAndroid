@@ -3,4 +3,6 @@
 
     <string name="facebook_application_id" translatable="false">741667056208064</string>
     <string name="facebook_login_protocol_scheme" translatable="false">fb741667056208064</string>
+
+    <string name="welcome">Hello %s!</string>
 </resources>

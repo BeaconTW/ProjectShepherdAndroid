@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <import type="android.view.View"/>
+
+        <import type="android.view.View" />
+
         <variable
             name="hasEvent"
             type="Boolean" />
@@ -27,12 +29,13 @@
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
                 app:layout_scrollFlags="scroll|enterAlways"
-                app:title="@string/app_name" >
+                app:title="@string/app_name">
 
 
             </androidx.appcompat.widget.Toolbar>
 
         </com.google.android.material.appbar.AppBarLayout>
+
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
@@ -51,13 +54,14 @@
                 tools:listitem="@layout/list_item_event" />
         </androidx.core.widget.NestedScrollView>
 
+
         <!--<TextView-->
-            <!--android:id="@+id/text_no_event"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:text="There's no events currently"-->
-            <!--android:visibility="@{hasEvent ? View.GONE : View.VISIBLE}" />-->
+        <!--android:id="@+id/text_no_event"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="There's no events currently"-->
+        <!--android:visibility="@{hasEvent ? View.GONE : View.VISIBLE}" />-->
 
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton

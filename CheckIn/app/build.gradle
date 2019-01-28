@@ -41,7 +41,7 @@ dependencies {
     // material design
     implementation "com.google.android.material:material:1.0.0"
 
-    // nav_main
+    // navigation component
     implementation "android.arch.navigation:navigation-fragment-ktx:$navigation_version"
     implementation "android.arch.navigation:navigation-ui-ktx:$navigation_version"
 

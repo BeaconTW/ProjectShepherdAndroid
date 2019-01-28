@@ -27,6 +27,7 @@ class HomeFragment : Fragment() {
 
 
         binding.hasEvent = events.size != 0
+
         setupFirestore(binding.rvEventList)
         return binding.root
     }
