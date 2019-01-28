@@ -9,7 +9,8 @@
         android:id="@+id/fragment_home"
         android:name="com.shepherd.checkin.ui.HomeFragment"
         android:label="EventFragment"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+    </fragment>
 
     <fragment
         android:id="@+id/fragment_search"

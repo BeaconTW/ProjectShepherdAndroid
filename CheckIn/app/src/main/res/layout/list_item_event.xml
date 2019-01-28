@@ -7,7 +7,7 @@
 
         <variable
             name="event"
-            type="com.shepherd.checkin.model.Event" />
+            type="com.shepherd.checkin.model.EventViewModel" />
     </data>
 
     <androidx.cardview.widget.CardView

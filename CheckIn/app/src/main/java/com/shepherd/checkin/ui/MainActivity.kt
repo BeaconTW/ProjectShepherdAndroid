@@ -3,7 +3,6 @@ package com.shepherd.checkin.ui
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.shepherd.checkin.R
@@ -16,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
-//        val navController = findNavController(R.id.nav_host_fragment)
+        setupNavigation()
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -24,4 +23,9 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp()
     }
 
+
+    private fun setupNavigation() {
+        val navController = findNavController(R.id.nav_host_fragment)
+        bottom_nav_view.setupWithNavController(navController)
+    }
 }

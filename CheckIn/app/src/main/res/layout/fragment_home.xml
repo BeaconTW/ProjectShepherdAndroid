@@ -27,7 +27,10 @@
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
                 app:layout_scrollFlags="scroll|enterAlways"
-                app:title="@string/app_name" />
+                app:title="@string/app_name" >
+
+
+            </androidx.appcompat.widget.Toolbar>
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -46,17 +49,15 @@
                 android:paddingBottom="@dimen/layout_margin"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/list_item_event" />
-
-
         </androidx.core.widget.NestedScrollView>
 
-        <TextView
-            android:id="@+id/text_no_event"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="There's no events currently"
-            android:visibility="@{hasEvent ? View.GONE : View.VISIBLE}" />
+        <!--<TextView-->
+            <!--android:id="@+id/text_no_event"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="There's no events currently"-->
+            <!--android:visibility="@{hasEvent ? View.GONE : View.VISIBLE}" />-->
 
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
